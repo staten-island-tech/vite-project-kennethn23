@@ -2,6 +2,9 @@
     console.log(i);
 }
 
+// for (start, end, iteration){
+}
+
 while(i < 7){
     console.log(i);
     i++;
@@ -12,11 +15,20 @@ while(i < 7){
 // i += 3 increment by greater than 1
 // i -= 5 decrement by greater than 1
 
-numsArray = [1, 2, 3, 4, 5];
+
+
+
+
+
+
+
+/* numsArray = [1, 2, 3, 4, 5];
 
 function linearSearch(number, array){
     let found;
+    // for loop is iteration
     for(let i = 0; i < array.length; i++){
+        // evaluations and if statements are selection
         if(array[i] === number){
             found = array[i];
             break;
@@ -33,4 +45,24 @@ function linearSearch(number, array){
     return found;
 };
 
-linearSearch(50, numsArray)
+linearSearch(50, numsArray) */
+
+
+
+
+
+let integer = prompt("Integer between 1 and 100");
+let yesterday = prompt("Yesterday's parking spaces");
+let today = prompt("Today's parking spaces");
+
+function parkingSpaces(num, yesterday, today) {
+    let counter = 0; 
+    for (let i = 0; i <= integer; i++) {
+        if (yesterday[i] === today[i] && yesterday[i] === "C"){
+            counter += 1;
+        };
+    };
+    console.log(counter);
+}
+
+parkingSpaces(integer, yesterday, today);
