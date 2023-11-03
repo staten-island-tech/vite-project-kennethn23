@@ -51,7 +51,7 @@ linearSearch(50, numsArray) */
 
 
 
-let integer = prompt("Integer between 1 and 100");
+/* let integer = prompt("Integer between 1 and 100");
 let yesterday = prompt("Yesterday's parking spaces");
 let today = prompt("Today's parking spaces");
 
@@ -65,4 +65,19 @@ function parkingSpaces(num, yesterday, today) {
     console.log(counter);
 }
 
-parkingSpaces(integer, yesterday, today);
+parkingSpaces(integer, yesterday, today); */
+
+
+
+
+let loop = Number(prompt("Number of times to run fibonacci sequence"));
+
+function fibonacci(num) {
+    let fibSequence = [0, 1];
+    for (let i = 2; i <= num; i++) {
+        fibSequence.push(fibSequence[fibSequence.length - 1] + fibSequence[fibSequence.length - 2]);
+    };
+    console.log(fibSequence[fibSequence.length - 1]);
+};
+
+fibonacci(loop);
