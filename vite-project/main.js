@@ -1,4 +1,4 @@
-import './style.css'
+/* import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
@@ -22,3 +22,34 @@ document.querySelector('#app').innerHTML = `
 `
 
 setupCounter(document.querySelector('#counter'))
+ */
+
+const DOMSelectors = {
+  all: document.querySelector("#all"),
+  vegan: document.querySelector("#vegan"),
+  sale: document.querySelector("#sale"),
+  box: document.querySelector(".card-holder"),
+}
+
+function insertAll() {
+  DOMSelectors.box.insertAdjacentHTML("beforeend", 
+  `<div class="entry">
+    <img src="" alt="Image" class="card-img">
+    <h1 class="agent-name-card"></h1>
+    <h2></h2>
+  </div>
+  `);
+}
+
+function insertVegan() {
+
+}
+
+function insertSale() {
+
+}
+
+DOMSelectors.form.addEventListener("all", function (event) {
+  event.preventDefault();
+
+});

@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -94,4 +94,55 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+ */
+
+ body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.page-title {
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(255, 255, 0);
+  text-align: center;
+  height: 10%;
+}
+
+.card {
+  width: 19%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 0, 0.2);
+  justify-content: space-around;
+  border-radius: 30px;
+  vertical-align: middle;
+  margin: 30px;
+  text-align: center;
+  padding: 10px;
+  border-style: outset;
+  border-color: #ff8f33;
+  border-width: 0.7rem;
+  box-shadow: 5px 10px #331c0a;
+}
+
+.card-title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: 'Skranji', cursive;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
