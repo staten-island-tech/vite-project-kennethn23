@@ -1,5 +1,5 @@
-/* import './style.css'
-import javascriptLogo from './javascript.svg'
+import './style.css'
+/* import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
 
@@ -33,11 +33,18 @@ const DOMSelectors = {
 
 function insertAll() {
   DOMSelectors.box.insertAdjacentHTML("beforeend", 
-  `<div class="entry">
-    <img src="" alt="Image" class="card-img">
-    <h1 class="agent-name-card"></h1>
-    <h2></h2>
-  </div>
+  `<div class="all">
+      <div class="pizza">
+        <h2 class="card-title">Pizza Slice</h2>
+        <img src="https://slicelife.imgix.net/15041/photos/original/SlicePizza_Cheese.jpg?auto=compress&auto=format" alt="Pizza" class="card-img">
+        <p class="card-description">Cost: $1.25</p>
+      </div>
+      <div class="salad">
+        <h2 class="card-title">Salad</h2>
+        <img src="https://cleanfoodcrush.com/wp-content/uploads/2020/06/Clean-Food-Crush-Printable-Recipe-Marinated-Garden-Tomato-Crisp-Cucumber-Salad-800x1000.jpg" alt="Salad" class="card-img">
+        <p class="card-description">Cost: $3.00</p>
+      </div>
+    </div>
   `);
 }
 
@@ -51,5 +58,5 @@ function insertSale() {
 
 DOMSelectors.form.addEventListener("all", function (event) {
   event.preventDefault();
-
+  insertAll();
 });
