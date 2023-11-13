@@ -20,6 +20,8 @@ DOMSelectors.sale.addEventListener("click", function () {
   insertSale();
 })
 
+insertAll();
+
 /* DOMSelectors.buttons.addEventListener("all", function (event) {
   event.preventDefault();
   insertAll();
