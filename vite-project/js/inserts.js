@@ -1,57 +1,105 @@
 import { menu } from "./menu";
 import { DOMSelectors } from './dom';
 
-
-
 function insertAll() {
-  let menuNames = [];
-  let menuPrices = [];
-  let menuCalores = [];
-  let menuPieces = [];
-  let menuImages = [];
-  menu.forEach((item) => menuNames.push(item.name));
-  menu.forEach((item) => menuPrices.push(item.price));
-  menu.forEach((item) => menuCalores.push(item.calories));
-  menu.forEach((item) => menuPieces.push(item.pieces));
-  menu.forEach((item) => menuImages.push(item.image));
-    DOMSelectors.box.insertAdjacentHTML("beforeend", 
-    `<div class="card-gallery">
-    <div class="card" id="pizza">
-      <h2 class="card-title">${menu[0].name}</h2>
-      <img src="${menu[0].image}" alt="${menu[0].name}" class="card-img">
-      <p class="card-description">${menu[0].price}</p>
+    menu.forEach((item) => DOMSelectors.box.insertAdjacentHTML("beforeend", 
+    `<div class="card" id="all">
+      <h2 class="card-title">${item.name}</h2>
+      <img src="${item.image}" alt="${item.name}" class="card-img">
+      <p class="card-description">${item.price}</p>
     </div>
-    <div class="card" id="salad">
-      <h2 class="card-title">${menu[1].name}</h2>
-      <img src="${menu[1].image}" alt="${menu[1].name}" class="card-img">
-      <p class="card-description">${menu[1].price}</p>
-    </div>
-  </div>
-    `);
+    `)
+    );
   }
   
-  function insertVegan() {
-    DOMSelectors.box.insertAdjacentHTML("beforeend", 
-    `<div class="card-gallery">
-    <div class="card" id="salad">
-      <h2 class="card-title">${menu[1].name}</h2>
-      <img src="${menu[1].image}" alt="${menu[1].name}" class="card-img">
-      <p class="card-description">${menu[1].price}</p>
+  function insertChicken() {
+    const filtered = menu.filter((item) => item.type.includes("chicken"));
+    filtered.forEach((item) => DOMSelectors.box.insertAdjacentHTML("beforeend", 
+    `<div class="card" id="chicken">
+      <h2 class="card-title">${item.name}</h2>
+      <img src="${item.image}" alt="${item.name}" class="card-img">
+      <p class="card-description">${item.price}</p>
     </div>
-  </div>
-    `);
+    `)
+    );
   }
   
-  function insertSale() {
-    DOMSelectors.box.insertAdjacentHTML("beforeend", 
-    `<div class="card-gallery">
-    <div class="card" id="pizza">
-      <h2 class="card-title">${menu[0].name}</h2>
-      <img src="${menu[0].image}" alt="${menu[0].name}" class="card-img">
-      <p class="card-description">${menu[0].price}</p>
+  function insertBeef() {
+    const filtered = menu.filter((item) => item.type.includes("beef"));
+    filtered.forEach((item) => DOMSelectors.box.insertAdjacentHTML("beforeend", 
+    `<div class="card" id="beef">
+      <h2 class="card-title">${item.name}</h2>
+      <img src="${item.image}" alt="${item.name}" class="card-img">
+      <p class="card-description">${item.price}</p>
     </div>
+    `)
+    );
+  }
+  
+  function insertShrimp() {
+    const filtered = menu.filter((item) => item.type.includes("shrimp"));
+    filtered.forEach((item) => DOMSelectors.box.insertAdjacentHTML("beforeend", 
+    `<div class="card" id="shrimp">
+      <h2 class="card-title">${item.name}</h2>
+      <img src="${item.image}" alt="${item.name}" class="card-img">
+      <p class="card-description">${item.price}</p>
     </div>
-    `);
+    `)
+    );
+  }
+  
+  function insertTofu() {
+    const filtered = menu.filter((item) => item.type.includes("tofu"));
+    filtered.forEach((item) => DOMSelectors.box.insertAdjacentHTML("beforeend", 
+    `<div class="card" id="tofu">
+      <h2 class="card-title">${item.name}</h2>
+      <img src="${item.image}" alt="${item.name}" class="card-img">
+      <p class="card-description">${item.price}</p>
+    </div>
+    `)
+    );
+  }
+  
+  function insertSoup() {
+    const filtered = menu.filter((item) => item.type.includes("soup"));
+    filtered.forEach((item) => DOMSelectors.box.insertAdjacentHTML("beforeend", 
+    `<div class="card" id="soup">
+      <h2 class="card-title">${item.name}</h2>
+      <img src="${item.image}" alt="${item.name}" class="card-img">
+      <p class="card-description">${item.price}</p>
+    </div>
+    `)
+    );
+  }
+  
+  function insertOther() {
+    const filtered = menu.filter((item) => item.type.includes("other"));
+    filtered.forEach((item) => DOMSelectors.box.insertAdjacentHTML("beforeend", 
+    `<div class="card" id="other">
+      <h2 class="card-title">${item.name}</h2>
+      <img src="${item.image}" alt="${item.name}" class="card-img">
+      <p class="card-description">${item.price}</p>
+    </div>
+    `)
+    );
   }
 
-export { insertAll, insertSale, insertVegan };
+  function removeEverything() {
+    const all = document.querySelectorAll("#all");
+    const chicken = document.querySelectorAll("#chicken");
+    const beef = document.querySelectorAll("#beef");
+    const shrimp = document.querySelectorAll("#shrimp");
+    const tofu = document.querySelectorAll("#tofu");
+    const soup = document.querySelectorAll("#soup");
+    const other = document.querySelectorAll("#other");
+    all.forEach((item) => item.remove());
+    all.forEach((item) => item.remove());
+    chicken.forEach((item) => item.remove());
+    beef.forEach((item) => item.remove());
+    shrimp.forEach((item) => item.remove());
+    tofu.forEach((item) => item.remove());
+    soup.forEach((item) => item.remove());
+    other.forEach((item) => item.remove());
+  }
+
+export { insertAll, insertChicken, insertBeef, insertShrimp, insertTofu, insertSoup, insertOther, removeEverything };

@@ -5,7 +5,7 @@ const menu = [
       pieces: 6,
       calories: 420,
       type: ["chicken"],
-      image: "",
+      image: "../sweet_and_sour_chicken.jpg",
     },
     {
       name: "Mongolian Beef",
@@ -13,7 +13,7 @@ const menu = [
       pieces: 8,
       calories: 570,
       type: ["beef"],
-      image: "",
+      image: "../mongolian_beef.jpg",
     },
     {
       name: "Kung Pao Chicken",
@@ -21,7 +21,7 @@ const menu = [
       pieces: 6,
       calories: 380,
       type: ["chicken"],
-      image: "",
+      image: "../kung_pao_chicken.jpg",
     },
     {
       name: "Shrimp Fried Rice",
@@ -29,7 +29,7 @@ const menu = [
       pieces: 1,
       calories: 620,
       type: ["other", "shrimp"],
-      image: "",
+      image: "../shrimp_fried_rice.jpg",
     },
     {
       name: "General Tso's Chicken",
@@ -37,7 +37,7 @@ const menu = [
       pieces: 8,
       calories: 520,
       type: ["chicken"],
-      image: "",
+      image: "../general_tso_chicken.jpg",
     },
     {
       name: "Egg Foo Young",
@@ -45,7 +45,7 @@ const menu = [
       pieces: 3,
       calories: 280,
       type: ["other"],
-      image: "",
+      image: "../egg_foo_young.jpg",
     },
     {
       name: "Spring Rolls",
@@ -53,7 +53,7 @@ const menu = [
       pieces: 3,
       calories: 200,
       type: ["beef", "other"],
-      image: "",
+      image: "../shrimp_roll.jpg",
     },
     {
       name: "Hot and Sour Soup",

@@ -1,24 +1,41 @@
 import '../css/style.css';
 import { DOMSelectors } from './dom';
-import { insertAll, insertVegan, insertSale } from './inserts';
+import { insertAll, insertChicken, insertBeef, insertShrimp, insertTofu, insertSoup, insertOther, removeEverything } from './inserts';
 
 DOMSelectors.all.addEventListener("click", function () {
-  const currentDiv = document.querySelector(".card-gallery");
-  currentDiv.remove();
+  removeEverything();
   insertAll();
-})
+});
 
-DOMSelectors.vegan.addEventListener("click", function () {
-  const currentDiv = document.querySelector(".card-gallery");
-  currentDiv.remove();
-  insertVegan();
-})
+DOMSelectors.chicken.addEventListener("click", function () {
+  removeEverything();
+  insertChicken();
+});
 
-DOMSelectors.sale.addEventListener("click", function () {
-  const currentDiv = document.querySelector(".card-gallery");
-  currentDiv.remove();
-  insertSale();
-})
+DOMSelectors.beef.addEventListener("click", function () {
+  removeEverything();
+  insertBeef();
+});
+
+DOMSelectors.shrimp.addEventListener("click", function () {
+  removeEverything();
+  insertShrimp();
+});
+
+DOMSelectors.tofu.addEventListener("click", function () {
+  removeEverything();
+  insertTofu();
+});
+
+DOMSelectors.soup.addEventListener("click", function () {
+  removeEverything();
+  insertSoup();
+});
+
+DOMSelectors.other.addEventListener("click", function () {
+  removeEverything();
+  insertOther();
+});
 
 insertAll();
 
