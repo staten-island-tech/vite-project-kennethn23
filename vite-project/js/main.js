@@ -37,12 +37,15 @@ DOMSelectors.other.addEventListener("click", function () {
   insertOther();
 });
 
-DOMSelectors.lightTheme.addEventListener("click", function () {
-  DOMSelectors.theme.innerHTML.replace(`<div class="theme" id="light">`);
-});
-
-DOMSelectors.darkTheme.addEventListener("click", function () {
-  document.body.innerHTML = document.body.innerHTML.replace("light", "dark");
+document.querySelector("#theme-button").addEventListener("click", function () {
+  if (document.body.classList.contains("light")) {
+    document.body.classList.add("dark");
+    document.body.classList.remove("light");
+  }
+  else {
+    document.body.classList.add("light");
+    document.body.classList.remove("dark");
+  }
 });
 
 insertAll();

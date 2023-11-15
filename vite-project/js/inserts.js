@@ -4,9 +4,9 @@ import { DOMSelectors } from './dom';
 function insertAll() {
     menu.forEach((item) => DOMSelectors.box.insertAdjacentHTML("beforeend", 
     `<div class="card" id="all">
-      <h2 class="card-title">${item.name}</h2>
+      <h3 class="card-title">${item.name}</h3>
       <img src="${item.image}" alt="${item.name}" class="card-img">
-      <p class="card-description">${item.price} / ${item.pieces} piece(s), ${item.calories} calories</p>
+      <h5 class="card-description">${item.price} / ${item.pieces} piece(s), ${item.calories} calories</h5>
     </div>
     `)
     );

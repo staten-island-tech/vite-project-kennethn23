@@ -98,35 +98,50 @@ button:focus-visible {
  */
 
 :root {
-  --dark-blue: #135cc5;
-  --orange: #ff7730;
-  --primary: var(--orange);
+  --light: #f7fbff;
+  --dark: #303133;
+  --blue: #5b9fff;
+  --darkBlue: #152036;
+  --darkerBlue: #020814;
+  --blueTransp: rgb(91, 159, 255, 0.2);
+  --darkBlueTransp: rgb(21, 32, 54, 0.2);
+  
 
-  --h1: 7.594rem;
-  --h2: 5.063rem;
+  --h1: 3.375rem;
+  --h2: 2.25rem;
+  --h3: 1.5rem;
+  --h4: 1rem;
+  --h5: 0.5rem;
 }
 
 .dark{
-  --primary: var(--dark-blue);
+  --primary: var(--dark);
+  --text: var(--light);
+  --border: var(--darkBlue);
+  --shadow: var(--darkerBlue);
+  --cardBG: var(--darkBlueTransp);
 }
 
 .light{
-  --primary: var(--orange);
+  --primary: var(--light);
+  --text: var(--dark);
+  --border: var(--blue);
+  --shadow: var(--darkerBlue);
+  --cardBG: var(--blueTransp);
 }
 
  body {
   box-sizing: border-box;
   margin: 0;
   background-color: var(--primary);
+  color: var(--text);
   display: flex;
 }
 
 .page-title {
-  font-size: 1.8rem;
+  font-size: var(--h1);
   font-family: 'Poppins', sans-serif;
-  background-color: rgb(255, 255, 0);
   text-align: center;
-  height: 10%;
 }
 
 .card {
@@ -135,7 +150,7 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(255, 255, 0, 0.2);
+  background-color: var(--cardBG);
   justify-content: space-around;
   border-radius: 30px;
   vertical-align: middle;
@@ -143,9 +158,9 @@ button:focus-visible {
   text-align: center;
   padding: 10px;
   border-style: outset;
-  border-color: #ff8f33;
+  border-color: var(--border);
   border-width: 0.7rem;
-  box-shadow: 5px 10px #331c0a;
+  box-shadow: 5px 10px var(--shadow);
 }
 
 .card-title {

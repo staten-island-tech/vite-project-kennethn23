@@ -7,9 +7,6 @@ const DOMSelectors = {
     noodle: document.querySelector("#noodle-button"),
     other: document.querySelector("#other-button"),
     box: document.querySelector(".card-holder"),
-    lightTheme: document.querySelector("#light-theme"),
-    darkTheme: document.querySelector("#dark-theme"),
-    theme: document.querySelector(".theme"),
   }
 
 export { DOMSelectors };
