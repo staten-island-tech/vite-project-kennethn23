@@ -6,7 +6,7 @@ function insertAll() {
     `<div class="card" id="all">
       <h2 class="card-title">${item.name}</h2>
       <img src="${item.image}" alt="${item.name}" class="card-img">
-      <p class="card-description">${item.price}</p>
+      <p class="card-description">${item.price} / ${item.pieces} piece(s), ${item.calories} calories</p>
     </div>
     `)
     );
@@ -18,7 +18,8 @@ function insertAll() {
     `<div class="card" id="chicken">
       <h2 class="card-title">${item.name}</h2>
       <img src="${item.image}" alt="${item.name}" class="card-img">
-      <p class="card-description">${item.price}</p>
+      <p class="card-description">${item.price} / ${item.pieces} piece(s), ${item.calories} calories</p>
+    </div>
     </div>
     `)
     );
@@ -30,7 +31,8 @@ function insertAll() {
     `<div class="card" id="beef">
       <h2 class="card-title">${item.name}</h2>
       <img src="${item.image}" alt="${item.name}" class="card-img">
-      <p class="card-description">${item.price}</p>
+      <p class="card-description">${item.price} / ${item.pieces} piece(s), ${item.calories} calories</p>
+    </div>
     </div>
     `)
     );
@@ -42,31 +44,34 @@ function insertAll() {
     `<div class="card" id="shrimp">
       <h2 class="card-title">${item.name}</h2>
       <img src="${item.image}" alt="${item.name}" class="card-img">
-      <p class="card-description">${item.price}</p>
+      <p class="card-description">${item.price} / ${item.pieces} piece(s), ${item.calories} calories</p>
+    </div>
     </div>
     `)
     );
   }
   
-  function insertTofu() {
-    const filtered = menu.filter((item) => item.type.includes("tofu"));
+  function insertRice() {
+    const filtered = menu.filter((item) => item.type.includes("rice"));
     filtered.forEach((item) => DOMSelectors.box.insertAdjacentHTML("beforeend", 
-    `<div class="card" id="tofu">
+    `<div class="card" id="rice">
       <h2 class="card-title">${item.name}</h2>
       <img src="${item.image}" alt="${item.name}" class="card-img">
-      <p class="card-description">${item.price}</p>
+      <p class="card-description">${item.price} / ${item.pieces} piece(s), ${item.calories} calories</p>
+    </div>
     </div>
     `)
     );
   }
   
-  function insertSoup() {
-    const filtered = menu.filter((item) => item.type.includes("soup"));
+  function insertNoodle() {
+    const filtered = menu.filter((item) => item.type.includes("noodle"));
     filtered.forEach((item) => DOMSelectors.box.insertAdjacentHTML("beforeend", 
-    `<div class="card" id="soup">
+    `<div class="card" id="noodle">
       <h2 class="card-title">${item.name}</h2>
       <img src="${item.image}" alt="${item.name}" class="card-img">
-      <p class="card-description">${item.price}</p>
+      <p class="card-description">${item.price} / ${item.pieces} piece(s), ${item.calories} calories</p>
+    </div>
     </div>
     `)
     );
@@ -78,7 +83,8 @@ function insertAll() {
     `<div class="card" id="other">
       <h2 class="card-title">${item.name}</h2>
       <img src="${item.image}" alt="${item.name}" class="card-img">
-      <p class="card-description">${item.price}</p>
+      <p class="card-description">${item.price} / ${item.pieces} piece(s), ${item.calories} calories</p>
+    </div>
     </div>
     `)
     );
@@ -89,17 +95,17 @@ function insertAll() {
     const chicken = document.querySelectorAll("#chicken");
     const beef = document.querySelectorAll("#beef");
     const shrimp = document.querySelectorAll("#shrimp");
-    const tofu = document.querySelectorAll("#tofu");
-    const soup = document.querySelectorAll("#soup");
+    const rice = document.querySelectorAll("#rice");
+    const noodle = document.querySelectorAll("#noodle");
     const other = document.querySelectorAll("#other");
     all.forEach((item) => item.remove());
     all.forEach((item) => item.remove());
     chicken.forEach((item) => item.remove());
     beef.forEach((item) => item.remove());
     shrimp.forEach((item) => item.remove());
-    tofu.forEach((item) => item.remove());
-    soup.forEach((item) => item.remove());
+    rice.forEach((item) => item.remove());
+    noodle.forEach((item) => item.remove());
     other.forEach((item) => item.remove());
   }
 
-export { insertAll, insertChicken, insertBeef, insertShrimp, insertTofu, insertSoup, insertOther, removeEverything };
+export { insertAll, insertChicken, insertBeef, insertShrimp, insertRice, insertNoodle, insertOther, removeEverything };

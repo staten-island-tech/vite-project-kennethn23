@@ -3,11 +3,13 @@ const DOMSelectors = {
     chicken: document.querySelector("#chicken-button"),
     beef: document.querySelector("#beef-button"),
     shrimp: document.querySelector("#shrimp-button"),
-    tofu: document.querySelector("#tofu-button"),
-    soup: document.querySelector("#soup-button"),
+    rice: document.querySelector("#rice-button"),
+    noodle: document.querySelector("#noodle-button"),
     other: document.querySelector("#other-button"),
     box: document.querySelector(".card-holder"),
-    buttons: document.querySelector(".buttons"),
+    lightTheme: document.querySelector("#light-theme"),
+    darkTheme: document.querySelector("#dark-theme"),
+    theme: document.querySelector(".theme"),
   }
 
 export { DOMSelectors };

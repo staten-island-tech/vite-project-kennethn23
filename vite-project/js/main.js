@@ -1,6 +1,6 @@
 import '../css/style.css';
 import { DOMSelectors } from './dom';
-import { insertAll, insertChicken, insertBeef, insertShrimp, insertTofu, insertSoup, insertOther, removeEverything } from './inserts';
+import { insertAll, insertChicken, insertBeef, insertShrimp, insertRice, insertNoodle, insertOther, removeEverything } from './inserts';
 
 DOMSelectors.all.addEventListener("click", function () {
   removeEverything();
@@ -22,19 +22,27 @@ DOMSelectors.shrimp.addEventListener("click", function () {
   insertShrimp();
 });
 
-DOMSelectors.tofu.addEventListener("click", function () {
+DOMSelectors.rice.addEventListener("click", function () {
   removeEverything();
-  insertTofu();
+  insertRice();
 });
 
-DOMSelectors.soup.addEventListener("click", function () {
+DOMSelectors.noodle.addEventListener("click", function () {
   removeEverything();
-  insertSoup();
+  insertNoodle();
 });
 
 DOMSelectors.other.addEventListener("click", function () {
   removeEverything();
   insertOther();
+});
+
+DOMSelectors.lightTheme.addEventListener("click", function () {
+  DOMSelectors.theme.innerHTML.replace(`<div class="theme" id="light">`);
+});
+
+DOMSelectors.darkTheme.addEventListener("click", function () {
+  document.body.innerHTML = document.body.innerHTML.replace("light", "dark");
 });
 
 insertAll();
