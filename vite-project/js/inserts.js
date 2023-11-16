@@ -6,7 +6,8 @@ function insertAll() {
     `<div class="card" id="all">
       <h3 class="card-title">${item.name}</h3>
       <img src="${item.image}" alt="${item.name}" class="card-img">
-      <h5 class="card-description">${item.price} / ${item.pieces} piece(s), ${item.calories} calories</h5>
+      <h3 class="card-description">${item.price} | ${item.pieces} | ${item.calories} calories</h3>
+      
     </div>
     `)
     );

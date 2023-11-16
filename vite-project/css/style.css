@@ -98,13 +98,18 @@ button:focus-visible {
  */
 
 :root {
-  --light: #f7fbff;
-  --dark: #303133;
-  --blue: #5b9fff;
-  --darkBlue: #152036;
-  --darkerBlue: #020814;
+  --lightBlue: rgb(175, 217, 255);
+  --lightishBlue: rgb(120, 190, 255);
+  --darkRed: rgb(51, 48, 48);
+  --deepBlue: #5b9fff;
+  --darkerRed: #0a0404;
+  --black: #000000;
+  --white: #ffffff;
+  --green: #77ff77;
+  --deepRed: rgb(255, 91, 91);
+  --darkishRed: rgb(100, 51, 47);
   --blueTransp: rgb(91, 159, 255, 0.2);
-  --darkBlueTransp: rgb(21, 32, 54, 0.2);
+  --darkRedTransp: rgba(54, 21, 21, 0.2);
   
 
   --h1: 3.375rem;
@@ -115,18 +120,22 @@ button:focus-visible {
 }
 
 .dark{
-  --primary: var(--dark);
-  --text: var(--light);
-  --border: var(--darkBlue);
-  --shadow: var(--darkerBlue);
-  --cardBG: var(--darkBlueTransp);
+  --primary: var(--darkRed);
+  --secondary: var(--deepRed);
+  --color3: var(--darkishRed);
+  --text: var(--white);
+  --border: var(--darkerRed);
+  --shadow: var(--black);
+  --cardBG: var(--darkRedTransp);
 }
 
 .light{
-  --primary: var(--light);
-  --text: var(--dark);
-  --border: var(--blue);
-  --shadow: var(--darkerBlue);
+  --primary: var(--lightBlue);
+  --secondary: var(--deepBlue);
+  --color3: var(--lightishBlue);
+  --text: var(--black);
+  --border: var(--deepBlue);
+  --shadow: var(--black);
   --cardBG: var(--blueTransp);
 }
 
@@ -138,9 +147,76 @@ button:focus-visible {
   display: flex;
 }
 
+.food-buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--color3);
+  width: 20%;
+  align-items: center;
+  margin: auto;
+  border-radius: 100px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+#all-button {
+  border: 0;
+  background-color: var(--secondary);
+  font-size: var(--h3);
+  border-radius: 30px;
+  font-family: 'Noto Sans', sans-serif;
+  margin: 5px;
+  width: 33%;
+  padding: 10px;
+}
+
+#chicken-button, 
+#beef-button, 
+#shrimp-button,
+#rice-button,
+#noodle-button,
+#other-button {
+  border: 0;
+  background-color: var(--secondary);
+  font-size: var(--h4);
+  border-radius: 30px;
+  font-family: 'Rubik', sans-serif;
+  padding: 5px;
+  margin: 1px;
+}
+
+#all-button:hover,
+#chicken-button:hover,
+#beef-button:hover,
+#shrimp-button:hover,
+#rice-button:hover,
+#noodle-button:hover,
+#other-button:hover {
+  background-color: var(--green);
+  transition: all 0.4s;
+  transform: scale(1.1);
+}
+
+.theme-buttons {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+#theme-button {
+  border: 0;
+  background-color: var(--secondary);
+  font-size: var(--h3);
+  border: 30px;
+  font-family: 'Rubik', sans-serif;
+  padding: 5px;
+  border-radius: 30px;
+}
+
 .page-title {
   font-size: var(--h1);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Agbalumo', serif;
   text-align: center;
 }
 
@@ -164,9 +240,14 @@ button:focus-visible {
 }
 
 .card-title {
-  font-size: 2.5rem;
+  font-size: var(--h2);
   text-transform: uppercase;
-  font-family: 'Skranji', cursive;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.card-description {
+  font-size: var(--h4);
+  font-family: 'Rubik', serif;
 }
 
 .card-img {

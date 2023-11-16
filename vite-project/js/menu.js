@@ -2,7 +2,7 @@ const menu = [
     {
       name: "Sweet and Sour Chicken",
       price: "$10.99",
-      pieces: 6,
+      pieces: "6 pieces",
       calories: 420,
       type: ["chicken", "rice"],
       image: "../sweet_and_sour_chicken.jpg",
@@ -10,7 +10,7 @@ const menu = [
     {
       name: "Mongolian Beef",
       price: "$12.99",
-      pieces: 8,
+      pieces: "8 pieces",
       calories: 570,
       type: ["beef", "other"],
       image: "../mongolian_beef.jpg",
@@ -18,7 +18,7 @@ const menu = [
     {
       name: "Kung Pao Chicken",
       price: "$9.99",
-      pieces: 6,
+      pieces: "6 pieces",
       calories: 380,
       type: ["chicken", "rice"],
       image: "../kung_pao_chicken.jpg",
@@ -26,7 +26,7 @@ const menu = [
     {
       name: "Shrimp Fried Rice",
       price: "$11.99",
-      pieces: 1,
+      pieces: "1 serving",
       calories: 620,
       type: ["rice", "shrimp"],
       image: "../shrimp_fried_rice.jpg",
@@ -34,7 +34,7 @@ const menu = [
     {
       name: "General Tso's Chicken",
       price: "$11.99",
-      pieces: 8,
+      pieces: "8 pieces",
       calories: 520,
       type: ["chicken", "other"],
       image: "../general_tso_chicken.jpg",
@@ -42,7 +42,7 @@ const menu = [
     {
       name: "Egg Foo Young",
       price: "$8.99",
-      pieces: 3,
+      pieces: "3 pieces",
       calories: 280,
       type: ["other"],
       image: "../egg_foo_young.jpg",
@@ -50,7 +50,7 @@ const menu = [
     {
       name: "Spring Rolls",
       price: "$4.99",
-      pieces: 3,
+      pieces: "3 pieces",
       calories: 200,
       type: ["beef", "rice"],
       image: "../shrimp_roll.jpg",
@@ -58,7 +58,7 @@ const menu = [
     {
       name: "Hot and Sour Soup",
       price: "$5.99",
-      pieces: 1,
+      pieces: "1 serving",
       calories: 180,
       type: ["other"],
       image: "../hot_and_sour_soup.jpg",
@@ -66,7 +66,7 @@ const menu = [
     {
       name: "Orange Chicken",
       price: "$10.99",
-      pieces: 8,
+      pieces: "8 pieces",
       calories: 450,
       type: ["chicken", "other"],
       image: "../orange_chicken.jpg",
@@ -74,7 +74,7 @@ const menu = [
     {
       name: "Beef and Broccoli",
       price: "$11.99",
-      pieces: 6,
+      pieces: "6 pieces",
       calories: 380,
       type: ["beef", "rice"],
       image: "../beef_and_broccoli.jpg",
@@ -82,7 +82,7 @@ const menu = [
     {
       name: "Crab Rangoon",
       price: "$6.99",
-      pieces: 6,
+      pieces: "6 pieces",
       calories: 320,
       type: ["other", "rice"],
       image: "../crab_rangoon.jpg",
@@ -90,7 +90,7 @@ const menu = [
     {
       name: "Sesame Chicken",
       price: "$10.99",
-      pieces: 8,
+      pieces: "8 pieces",
       calories: 500,
       type: ["chicken", "rice"],
       image: "../sesame_chicken.jpg",
@@ -98,7 +98,7 @@ const menu = [
     {
       name: "Steamed Dumplings",
       price: "$7.99",
-      pieces: 6,
+      pieces: "6 pieces",
       calories: 250,
       type: ["other", "shrimp"],
       image: "../steamed_dumplings.jpg",
@@ -106,7 +106,7 @@ const menu = [
     {
       name: "Fried Wontons",
       price: "$6.99",
-      pieces: 8,
+      pieces: "8 pieces",
       calories: 320,
       type: ["other", "beef"],
       image: "../fried_wonton.jpg",
@@ -114,7 +114,7 @@ const menu = [
     {
       name: "General Tso's Tofu",
       price: "$9.99",
-      pieces: 6,
+      pieces: "6 pieces",
       calories: 450,
       type: ["other"],
       image: "../general_tso_tofu.jpg",
@@ -122,7 +122,7 @@ const menu = [
     {
       name: "Pepper Steak",
       price: "$11.99",
-      pieces: 6,
+      pieces: "6 pieces",
       calories: 420,
       type: ["beef", "other"],
       image: "../pepper_steak.jpg",
@@ -130,7 +130,7 @@ const menu = [
     {
       name: "Honey Walnut Shrimp",
       price: "$12.99",
-      pieces: 8,
+      pieces: "8 pieces",
       calories: 550,
       type: ["shrimp", "other"],
       image: "../honey_walnut_shrimp.jpg",
@@ -138,7 +138,7 @@ const menu = [
     {
       name: "Wonton Soup",
       price: "$5.99",
-      pieces: 1,
+      pieces: "1 serving",
       calories: 150,
       type: ["beef", "noodle"],
       image: "../wonton_soup.jpg",
@@ -146,7 +146,7 @@ const menu = [
     {
       name: "Moo Goo Gai Pan",
       price: "$10.99",
-      pieces: 6,
+      pieces: "6 pieces",
       calories: 350,
       type: ["rice", "chicken"],
       image: "../moo_goo_gai_pan.jpg",
@@ -154,7 +154,7 @@ const menu = [
     {
       name: "Shrimp Lo Mein",
       price: "$12.99",
-      pieces: 1,
+      pieces: "1 serving",
       calories: 680,
       type: ["shrimp", "noodle"],
       image: "../shrimp_lo_mein.jpg",
@@ -162,7 +162,7 @@ const menu = [
     {
       name: "Cashew Chicken",
       price: "$10.99",
-      pieces: 6,
+      pieces: "6 pieces",
       calories: 420,
       type: ["chicken", "other"],
       image: "../cashew_chicken.jpg",
@@ -170,7 +170,7 @@ const menu = [
     {
       name: "Chicken Chow Mein",
       price: "$9.99",
-      pieces: 1,
+      pieces: "1 serving",
       calories: 600,
       type: ["chicken", "noodle"],
       image: "../chicken_chow_mein.jpg",
@@ -178,7 +178,7 @@ const menu = [
     {
       name: "Szechuan Tofu",
       price: "$9.99",
-      pieces: 6,
+      pieces: "6 pieces",
       calories: 320,
       type: ["tofu", "noodle"],
       image: "../schezwan_tofu.jpg",
@@ -186,7 +186,7 @@ const menu = [
     {
       name: "Egg Drop Soup",
       price: "$4.99",
-      pieces: 1,
+      pieces: "1 serving",
       calories: 130,
       type: ["other"],
       image: "../egg_drop_soup.jpg",
@@ -194,7 +194,7 @@ const menu = [
     {
       name: "Salt and Pepper Shrimp",
       price: "$13.99",
-      pieces: 8,
+      pieces: "8 pieces",
       calories: 580,
       type: ["shrimp", "other"],
       image: "../salt_and_pepper_shrimp.jpg",
@@ -202,7 +202,7 @@ const menu = [
     {
       name: "Beef Chow Fun",
       price: "$11.99",
-      pieces: 1,
+      pieces: "1 serving",
       calories: 690,
       type: ["beef", "noodle"],
       image: "../beef_chow_fun.jpg",
@@ -210,7 +210,7 @@ const menu = [
     {
       name: "Hot and Spicy Tofu",
       price: "$9.99",
-      pieces: 6,
+      pieces: "6 pieces",
       calories: 380,
       type: ["other"],
       image: "../hot_and_spicy_tofu.jpg",
