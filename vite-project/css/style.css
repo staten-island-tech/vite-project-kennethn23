@@ -192,7 +192,8 @@ button:focus-visible {
 #shrimp-button:hover,
 #rice-button:hover,
 #noodle-button:hover,
-#other-button:hover {
+#other-button:hover,
+#theme-button:hover {
   background-color: var(--green);
   transition: all 0.4s;
   transform: scale(1.1);
