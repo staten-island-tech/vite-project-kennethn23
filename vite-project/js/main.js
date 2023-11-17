@@ -41,7 +41,6 @@ document.querySelector("#theme-button").addEventListener("click", function () {
   if (document.body.classList.contains("light")) {
     document.body.classList.add("dark");
     document.body.classList.remove("light");
-    console.log("a");
   }
   else {
     document.body.classList.add("light");
