@@ -7,7 +7,6 @@ function insertAll() {
       <h3 class="card-title">${item.name}</h3>
       <img src="${item.image}" alt="${item.name}" class="card-img">
       <h3 class="card-description">${item.price} | ${item.pieces} | ${item.calories} calories</h3>
-      
     </div>
     `)
     );
@@ -17,11 +16,10 @@ function insertAll() {
     const filtered = menu.filter((item) => item.type.includes("chicken"));
     filtered.forEach((item) => DOMSelectors.box.insertAdjacentHTML("beforeend", 
     `<div class="card" id="chicken">
-      <h2 class="card-title">${item.name}</h2>
-      <img src="${item.image}" alt="${item.name}" class="card-img">
-      <p class="card-description">${item.price} / ${item.pieces} piece(s), ${item.calories} calories</p>
-    </div>
-    </div>
+    <h3 class="card-title">${item.name}</h3>
+    <img src="${item.image}" alt="${item.name}" class="card-img">
+    <h3 class="card-description">${item.price} | ${item.pieces} | ${item.calories} calories</h3>
+  </div>
     `)
     );
   }
@@ -30,11 +28,10 @@ function insertAll() {
     const filtered = menu.filter((item) => item.type.includes("beef"));
     filtered.forEach((item) => DOMSelectors.box.insertAdjacentHTML("beforeend", 
     `<div class="card" id="beef">
-      <h2 class="card-title">${item.name}</h2>
-      <img src="${item.image}" alt="${item.name}" class="card-img">
-      <p class="card-description">${item.price} / ${item.pieces} piece(s), ${item.calories} calories</p>
-    </div>
-    </div>
+    <h3 class="card-title">${item.name}</h3>
+    <img src="${item.image}" alt="${item.name}" class="card-img">
+    <h3 class="card-description">${item.price} | ${item.pieces} | ${item.calories} calories</h3>
+  </div>
     `)
     );
   }
@@ -43,11 +40,10 @@ function insertAll() {
     const filtered = menu.filter((item) => item.type.includes("shrimp"));
     filtered.forEach((item) => DOMSelectors.box.insertAdjacentHTML("beforeend", 
     `<div class="card" id="shrimp">
-      <h2 class="card-title">${item.name}</h2>
-      <img src="${item.image}" alt="${item.name}" class="card-img">
-      <p class="card-description">${item.price} / ${item.pieces} piece(s), ${item.calories} calories</p>
-    </div>
-    </div>
+    <h3 class="card-title">${item.name}</h3>
+    <img src="${item.image}" alt="${item.name}" class="card-img">
+    <h3 class="card-description">${item.price} | ${item.pieces} | ${item.calories} calories</h3>
+  </div>
     `)
     );
   }
@@ -56,11 +52,10 @@ function insertAll() {
     const filtered = menu.filter((item) => item.type.includes("rice"));
     filtered.forEach((item) => DOMSelectors.box.insertAdjacentHTML("beforeend", 
     `<div class="card" id="rice">
-      <h2 class="card-title">${item.name}</h2>
-      <img src="${item.image}" alt="${item.name}" class="card-img">
-      <p class="card-description">${item.price} / ${item.pieces} piece(s), ${item.calories} calories</p>
-    </div>
-    </div>
+    <h3 class="card-title">${item.name}</h3>
+    <img src="${item.image}" alt="${item.name}" class="card-img">
+    <h3 class="card-description">${item.price} | ${item.pieces} | ${item.calories} calories</h3>
+  </div>
     `)
     );
   }
@@ -69,11 +64,10 @@ function insertAll() {
     const filtered = menu.filter((item) => item.type.includes("noodle"));
     filtered.forEach((item) => DOMSelectors.box.insertAdjacentHTML("beforeend", 
     `<div class="card" id="noodle">
-      <h2 class="card-title">${item.name}</h2>
-      <img src="${item.image}" alt="${item.name}" class="card-img">
-      <p class="card-description">${item.price} / ${item.pieces} piece(s), ${item.calories} calories</p>
-    </div>
-    </div>
+    <h3 class="card-title">${item.name}</h3>
+    <img src="${item.image}" alt="${item.name}" class="card-img">
+    <h3 class="card-description">${item.price} | ${item.pieces} | ${item.calories} calories</h3>
+  </div>
     `)
     );
   }
@@ -82,11 +76,10 @@ function insertAll() {
     const filtered = menu.filter((item) => item.type.includes("other"));
     filtered.forEach((item) => DOMSelectors.box.insertAdjacentHTML("beforeend", 
     `<div class="card" id="other">
-      <h2 class="card-title">${item.name}</h2>
-      <img src="${item.image}" alt="${item.name}" class="card-img">
-      <p class="card-description">${item.price} / ${item.pieces} piece(s), ${item.calories} calories</p>
-    </div>
-    </div>
+    <h3 class="card-title">${item.name}</h3>
+    <img src="${item.image}" alt="${item.name}" class="card-img">
+    <h3 class="card-description">${item.price} | ${item.pieces} | ${item.calories} calories</h3>
+  </div>
     `)
     );
   }
