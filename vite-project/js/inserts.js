@@ -93,7 +93,6 @@ function insertAll() {
     const noodle = document.querySelectorAll("#noodle");
     const other = document.querySelectorAll("#other");
     all.forEach((item) => item.remove());
-    all.forEach((item) => item.remove());
     chicken.forEach((item) => item.remove());
     beef.forEach((item) => item.remove());
     shrimp.forEach((item) => item.remove());
