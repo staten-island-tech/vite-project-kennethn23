@@ -1,40 +1,47 @@
 import '../css/style.css';
 import { DOMSelectors } from './dom';
-import { insertAll, insertChicken, insertBeef, insertShrimp, insertRice, insertNoodle, insertOther, removeEverything } from './inserts';
+import { menu } from './menu';
+import { insert } from './inserts';
 
 DOMSelectors.all.addEventListener("click", function () {
-  removeEverything();
-  insertAll();
+  DOMSelectors.box.innerHTML = "";
+  insert(menu);
 });
 
 DOMSelectors.chicken.addEventListener("click", function () {
-  removeEverything();
-  insertChicken();
+  DOMSelectors.box.innerHTML = "";
+  const chicken = menu.filter((item) => item.type.includes("chicken"));
+  insert(chicken);
 });
 
 DOMSelectors.beef.addEventListener("click", function () {
-  removeEverything();
-  insertBeef();
+  DOMSelectors.box.innerHTML = "";
+  const beef = menu.filter((item) => item.type.includes("beef"));
+  insert(beef);
 });
 
 DOMSelectors.shrimp.addEventListener("click", function () {
-  removeEverything();
-  insertShrimp();
+  DOMSelectors.box.innerHTML = "";
+  const shrimp = menu.filter((item) => item.type.includes("shrimp"));
+  insert(shrimp);
 });
 
 DOMSelectors.rice.addEventListener("click", function () {
-  removeEverything();
-  insertRice();
+  DOMSelectors.box.innerHTML = "";
+  const rice = menu.filter((item) => item.type.includes("rice"));
+  insert(rice);
 });
 
 DOMSelectors.noodle.addEventListener("click", function () {
-  removeEverything();
-  insertNoodle();
+  DOMSelectors.box.innerHTML = "";
+  const noodle = menu.filter((item) => item.type.includes("noodle"));
+  insert(noodle);
 });
 
 DOMSelectors.other.addEventListener("click", function () {
-  removeEverything();
-  insertOther();
+  DOMSelectors.box.innerHTML = "";
+  const other = menu.filter((item) => item.type.includes("other"));
+  insert(other);
 });
 
 document.querySelector("#theme-button").addEventListener("click", function () {
@@ -48,12 +55,4 @@ document.querySelector("#theme-button").addEventListener("click", function () {
   }
 });
 
-insertAll();
-
-/* DOMSelectors.buttons.addEventListener("all", function (event) {
-  event.preventDefault();
-  insertAll();
-  console.log("duigfuisdfa")
-});
- */
-// console.log(menu, name)
+insert(menu);
