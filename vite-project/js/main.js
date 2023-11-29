@@ -1,41 +1,55 @@
 import '../css/style.css';
-import { DOMSelectors } from './dom';
-import { insertAll, insertChicken, insertBeef, insertShrimp, insertRice, insertNoodle, insertOther, removeEverything } from './inserts';
+import { menu } from './menu';
+import { insert } from './inserts';
 
-DOMSelectors.all.addEventListener("click", function () {
-  removeEverything();
-  insertAll();
+let buttons = document.querySelectorAll(".foodButton");
+console.log(buttons);
+buttons.forEach((button) => button.addEventListener("click", 
+function () {
+  if (button == buttons[0]) {
+    insert(menu);
+  } else {
+    let filter = button.textContent;
+    let filteredMenu = menu.filter((food) => food.type.includes(filter));
+    insert(filteredMenu);
+  };
+}));
+
+insert(menu);
+
+/* DOMSelectors.all.addEventListener("click", function () {
+  insert(menu);
 });
 
 DOMSelectors.chicken.addEventListener("click", function () {
-  removeEverything();
-  insertChicken();
+  const chicken = menu.filter((item) => item.type.includes("chicken"));
+  insert(chicken);
 });
 
 DOMSelectors.beef.addEventListener("click", function () {
-  removeEverything();
-  insertBeef();
+  const beef = menu.filter((item) => item.type.includes("beef"));
+  insert(beef);
 });
 
 DOMSelectors.shrimp.addEventListener("click", function () {
-  removeEverything();
-  insertShrimp();
+  const shrimp = menu.filter((item) => item.type.includes("shrimp"));
+  insert(shrimp);
 });
 
 DOMSelectors.rice.addEventListener("click", function () {
-  removeEverything();
-  insertRice();
+  const rice = menu.filter((item) => item.type.includes("rice"));
+  insert(rice);
 });
 
 DOMSelectors.noodle.addEventListener("click", function () {
-  removeEverything();
-  insertNoodle();
+  const noodle = menu.filter((item) => item.type.includes("noodle"));
+  insert(noodle);
 });
 
 DOMSelectors.other.addEventListener("click", function () {
-  removeEverything();
-  insertOther();
-});
+  const other = menu.filter((item) => item.type.includes("other"));
+  insert(other);
+}); */
 
 document.querySelector("#theme-button").addEventListener("click", function () {
   if (document.body.classList.contains("light")) {
@@ -48,12 +62,4 @@ document.querySelector("#theme-button").addEventListener("click", function () {
   }
 });
 
-insertAll();
-
-/* DOMSelectors.buttons.addEventListener("all", function (event) {
-  event.preventDefault();
-  insertAll();
-  console.log("duigfuisdfa")
-});
- */
-// console.log(menu, name)
+insert(menu);
