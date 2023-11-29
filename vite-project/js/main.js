@@ -1,5 +1,4 @@
 import '../css/style.css';
-import { DOMSelectors } from './dom';
 import { menu } from './menu';
 import { insert } from './inserts';
 
