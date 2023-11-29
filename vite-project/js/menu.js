@@ -140,7 +140,7 @@ const menu = [
       price: "$5.99",
       pieces: "1 serving",
       calories: 150,
-      type: ["Beef", "Noodle"],
+      type: ["Beef", "Noodles"],
       image: "../wonton_soup.jpg",
     },
     {
@@ -156,7 +156,7 @@ const menu = [
       price: "$12.99",
       pieces: "1 serving",
       calories: 680,
-      type: ["Shrimp", "Noodle"],
+      type: ["Shrimp", "Noodles"],
       image: "../shrimp_lo_mein.jpg",
     },
     {
@@ -172,7 +172,7 @@ const menu = [
       price: "$9.99",
       pieces: "1 serving",
       calories: 600,
-      type: ["Chicken", "Noodle"],
+      type: ["Chicken", "Noodles"],
       image: "../chicken_chow_mein.jpg",
     },
     {
@@ -180,7 +180,7 @@ const menu = [
       price: "$9.99",
       pieces: "6 pieces",
       calories: 320,
-      type: ["Tofu", "Noodle"],
+      type: ["Tofu", "Noodles"],
       image: "../schezwan_tofu.jpg",
     },
     {
@@ -204,7 +204,7 @@ const menu = [
       price: "$11.99",
       pieces: "1 serving",
       calories: 690,
-      type: ["Beef", "Noodle"],
+      type: ["Beef", "Noodles"],
       image: "../beef_chow_fun.jpg",
     },
     {

@@ -3,17 +3,20 @@ import { DOMSelectors } from './dom';
 import { menu } from './menu';
 import { insert } from './inserts';
 
-let buttons = document.querySelectorAll(".food-buttons");
+let buttons = document.querySelectorAll(".foodButton");
+console.log(buttons);
 buttons.forEach((button) => button.addEventListener("click", 
 function () {
-  if (button == button[0]) {
+  if (button == buttons[0]) {
     insert(menu);
+  } else {
+    let filter = button.textContent;
+    let filteredMenu = menu.filter((food) => food.type.includes(filter));
+    insert(filteredMenu);
   };
-  let filter = button.textContent;
-  let filteredMenu = menu.filter((food) => food.type.includes(filter));
-  filteredMenu.forEach((food) => console.log(food));
-  filteredMenu.forEach((food) => insert(food));
 }));
+
+insert(menu);
 
 /* DOMSelectors.all.addEventListener("click", function () {
   insert(menu);
