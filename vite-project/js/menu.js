@@ -4,7 +4,7 @@ const menu = [
       price: "$10.99",
       pieces: "6 pieces",
       calories: 420,
-      type: ["chicken", "rice"],
+      type: ["Chicken", "Rice"],
       image: "../sweet_and_sour_chicken.jpg",
     },
     {
@@ -12,7 +12,7 @@ const menu = [
       price: "$12.99",
       pieces: "8 pieces",
       calories: 570,
-      type: ["beef", "other"],
+      type: ["Beef", "Other"],
       image: "../mongolian_beef.jpg",
     },
     {
@@ -20,7 +20,7 @@ const menu = [
       price: "$9.99",
       pieces: "6 pieces",
       calories: 380,
-      type: ["chicken", "rice"],
+      type: ["Chicken", "Rice"],
       image: "../kung_pao_chicken.jpg",
     },
     {
@@ -28,7 +28,7 @@ const menu = [
       price: "$11.99",
       pieces: "1 serving",
       calories: 620,
-      type: ["rice", "shrimp"],
+      type: ["Rice", "Shrimp"],
       image: "../shrimp_fried_rice.jpg",
     },
     {
@@ -36,7 +36,7 @@ const menu = [
       price: "$11.99",
       pieces: "8 pieces",
       calories: 520,
-      type: ["chicken", "other"],
+      type: ["Chicken", "Other"],
       image: "../general_tso_chicken.jpg",
     },
     {
@@ -44,7 +44,7 @@ const menu = [
       price: "$8.99",
       pieces: "3 pieces",
       calories: 280,
-      type: ["other"],
+      type: ["Other"],
       image: "../egg_foo_young.jpg",
     },
     {
@@ -52,7 +52,7 @@ const menu = [
       price: "$4.99",
       pieces: "3 pieces",
       calories: 200,
-      type: ["beef", "rice"],
+      type: ["Beef"],
       image: "../shrimp_roll.jpg",
     },
     {
@@ -60,7 +60,7 @@ const menu = [
       price: "$5.99",
       pieces: "1 serving",
       calories: 180,
-      type: ["other"],
+      type: ["Other"],
       image: "../hot_and_sour_soup.jpg",
     },
     {
@@ -68,7 +68,7 @@ const menu = [
       price: "$10.99",
       pieces: "8 pieces",
       calories: 450,
-      type: ["chicken", "other"],
+      type: ["Chicken", "Other"],
       image: "../orange_chicken.jpg",
     },
     {
@@ -76,7 +76,7 @@ const menu = [
       price: "$11.99",
       pieces: "6 pieces",
       calories: 380,
-      type: ["beef", "rice"],
+      type: ["Beef", "Rice"],
       image: "../beef_and_broccoli.jpg",
     },
     {
@@ -84,7 +84,7 @@ const menu = [
       price: "$6.99",
       pieces: "6 pieces",
       calories: 320,
-      type: ["other", "rice"],
+      type: ["Other"],
       image: "../crab_rangoon.jpg",
     },
     {
@@ -92,7 +92,7 @@ const menu = [
       price: "$10.99",
       pieces: "8 pieces",
       calories: 500,
-      type: ["chicken", "rice"],
+      type: ["Chicken", "Rice"],
       image: "../sesame_chicken.jpg",
     },
     {
@@ -100,7 +100,7 @@ const menu = [
       price: "$7.99",
       pieces: "6 pieces",
       calories: 250,
-      type: ["other", "shrimp"],
+      type: ["Other", "Shrimp"],
       image: "../steamed_dumplings.jpg",
     },
     {
@@ -108,7 +108,7 @@ const menu = [
       price: "$6.99",
       pieces: "8 pieces",
       calories: 320,
-      type: ["other", "beef"],
+      type: ["Other", "Beef"],
       image: "../fried_wonton.jpg",
     },
     {
@@ -116,7 +116,7 @@ const menu = [
       price: "$9.99",
       pieces: "6 pieces",
       calories: 450,
-      type: ["other"],
+      type: ["Other"],
       image: "../general_tso_tofu.jpg",
     },
     {
@@ -124,7 +124,7 @@ const menu = [
       price: "$11.99",
       pieces: "6 pieces",
       calories: 420,
-      type: ["beef", "other"],
+      type: ["Beef", "Other"],
       image: "../pepper_steak.jpg",
     },
     {
@@ -132,7 +132,7 @@ const menu = [
       price: "$12.99",
       pieces: "8 pieces",
       calories: 550,
-      type: ["shrimp", "other"],
+      type: ["Shrimp", "Other"],
       image: "../honey_walnut_shrimp.jpg",
     },
     {
@@ -140,7 +140,7 @@ const menu = [
       price: "$5.99",
       pieces: "1 serving",
       calories: 150,
-      type: ["beef", "noodle"],
+      type: ["Beef", "Noodles"],
       image: "../wonton_soup.jpg",
     },
     {
@@ -148,7 +148,7 @@ const menu = [
       price: "$10.99",
       pieces: "6 pieces",
       calories: 350,
-      type: ["rice", "chicken"],
+      type: ["Rice", "Chicken"],
       image: "../moo_goo_gai_pan.jpg",
     },
     {
@@ -156,7 +156,7 @@ const menu = [
       price: "$12.99",
       pieces: "1 serving",
       calories: 680,
-      type: ["shrimp", "noodle"],
+      type: ["Shrimp", "Noodles"],
       image: "../shrimp_lo_mein.jpg",
     },
     {
@@ -164,7 +164,7 @@ const menu = [
       price: "$10.99",
       pieces: "6 pieces",
       calories: 420,
-      type: ["chicken", "other"],
+      type: ["Chicken", "Other"],
       image: "../cashew_chicken.jpg",
     },
     {
@@ -172,7 +172,7 @@ const menu = [
       price: "$9.99",
       pieces: "1 serving",
       calories: 600,
-      type: ["chicken", "noodle"],
+      type: ["Chicken", "Noodles"],
       image: "../chicken_chow_mein.jpg",
     },
     {
@@ -180,7 +180,7 @@ const menu = [
       price: "$9.99",
       pieces: "6 pieces",
       calories: 320,
-      type: ["tofu", "noodle"],
+      type: ["Tofu", "Noodles"],
       image: "../schezwan_tofu.jpg",
     },
     {
@@ -188,7 +188,7 @@ const menu = [
       price: "$4.99",
       pieces: "1 serving",
       calories: 130,
-      type: ["other"],
+      type: ["Other"],
       image: "../egg_drop_soup.jpg",
     },
     {
@@ -196,7 +196,7 @@ const menu = [
       price: "$13.99",
       pieces: "8 pieces",
       calories: 580,
-      type: ["shrimp", "other"],
+      type: ["Shrimp", "Other"],
       image: "../salt_and_pepper_shrimp.jpg",
     },
     {
@@ -204,7 +204,7 @@ const menu = [
       price: "$11.99",
       pieces: "1 serving",
       calories: 690,
-      type: ["beef", "noodle"],
+      type: ["Beef", "Noodles"],
       image: "../beef_chow_fun.jpg",
     },
     {
@@ -212,7 +212,7 @@ const menu = [
       price: "$9.99",
       pieces: "6 pieces",
       calories: 380,
-      type: ["other"],
+      type: ["Other"],
       image: "../hot_and_spicy_tofu.jpg",
     },
   ];
